@@ -1,23 +1,33 @@
 # Like
 
-> Like is a Statamic addon that does something pretty neat.
+Like is a simple addon for Statamic that allows you to add a like button to your content that tracks how many likes the content or post has.
 
-## Features
+> You'll be surprised how much this little feature can increase engagement on your site.
 
-This addon does:
+## Installation
 
-- This
-- And this
-- And even this
+1. Install the addon using Composer:
 
-## How to Install
+    ```bash
+    composer require thibaultferaux/statamic-like
+    ```
 
-You can search for this addon in the `Tools > Addons` section of the Statamic control panel and click **install**, or run the following command from your project root:
+## Usage
 
-``` bash
-composer require thibaultferaux/like
+### Displaying the like button
+
+It's simple! Just add this to your site's layout:
+
+```antlers
+{{ like }}
 ```
 
-## How to Use
+## Customising
 
-Here's where you can explain how to use this wonderful addon.
+### Customising the like button
+
+You can customise the like button by publishing the config file:
+
+```bash
+php please vendor:publish --tag=like-config
+```
