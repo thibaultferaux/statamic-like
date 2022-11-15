@@ -10,7 +10,6 @@ class ServiceProvider extends AddonServiceProvider
         Tags\Like::class,
     ];
 
-
     protected $routes = [
         'actions' => __DIR__.'/../routes/actions.php',
     ];
@@ -27,4 +26,6 @@ class ServiceProvider extends AddonServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'like');
     }
+
+
 }
