@@ -27,12 +27,10 @@ const rt_like = {
             if (!this.likes.includes(id)) {
                 // change innerhtml
                 $btn.innerHTML += '🤍 Like';
-                $btn.classList.remove('bg-gray-200', 'text-black', 'border-gray-500');
-                $btn.classList.add('bg-red-500', 'text-white', 'border-red-500');
+                $btn.classList.add('btn-like--like');
             } else {
                 $btn.innerHTML += '🤍 Liked';
-                $btn.classList.remove('bg-red-500', 'text-white', 'border-red-500');
-                $btn.classList.add('bg-gray-200', 'text-black', 'border-gray-500');
+                $btn.classList.add('btn-like--liked');
             }
 
 

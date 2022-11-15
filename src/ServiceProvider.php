@@ -19,6 +19,10 @@ class ServiceProvider extends AddonServiceProvider
         __DIR__.'/../resources/assets/js/app.js',
     ];
 
+    protected $stylesheets = [
+        __DIR__.'/../resources/assets/css/style.css',
+    ];
+
     public function bootAddon()
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'like');

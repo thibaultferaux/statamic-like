@@ -28,7 +28,9 @@ class Like extends Tags
         }
         $this->scriptLoaded = true;
         $scriptPath = url('vendor/like/js/app.js');
-        return "<script src='$scriptPath'></script>";
+        $stylePath = url('vendor/like/css/style.css');
+        return "<script src='$scriptPath'></script>
+                <link rel='stylesheet' href='$stylePath'>";
     }
 
     /**

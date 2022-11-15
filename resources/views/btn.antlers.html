@@ -4,10 +4,7 @@
     {{ csrf_field }}
     <input type="hidden" name="entry_id" value="{{ id }}" />
     <input type="hidden" name="like_status" value="0" />
-    <button
-        data-id="{{ id }}"
-        class="btn-like bg-red-500 px-4 py-2 my-2 rounded-xl text-white font-semibold shadow-md flex flex-row-reverse gap-2"
-    >
-        <span class="font-bold">{{ likes }}</span>
+    <button data-id="{{ id }}" class="btn-like">
+        <span class="likes-bold">{{ likes }}</span>
     </button>
 </form>
