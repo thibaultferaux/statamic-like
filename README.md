@@ -18,7 +18,7 @@ Like is a simple addon for Statamic that allows you to add a like button to your
 
 ### Displaying the like button
 
-It's simple! Just add this to your site's layout:
+It's simple! Just add this to where you want your like button to appear in your antlers template:
 
 ```antlers
 {{ like }}
